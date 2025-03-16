@@ -39,8 +39,10 @@ export default async function RootLayout({
           <Link href="/about">About</Link>
           {isLoggedIn ? (
             <>
-              <Link href="/signout">Sign out</Link>
               <Link href="/admin">Admin</Link>
+              <Link className="ml-auto" href="/signout">
+                Sign out
+              </Link>
             </>
           ) : (
             <Link href="/login">Log in</Link>
