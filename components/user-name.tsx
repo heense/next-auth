@@ -6,5 +6,5 @@ export default async function UserName() {
   if (!session?.user) return null;
   console.log(session.user);
 
-  return <div>session.user.name</div>;
+  return <div>{session.user.name}</div>;
 }
